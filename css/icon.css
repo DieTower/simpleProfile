@@ -1,0 +1,31 @@
+a .icon.about {
+    background-image: url("../icon/person1_white.png");
+}
+
+a:hover .icon.about {
+    background-image: url("../icon/person2_white.png");
+}
+
+a .icon.travel {
+    background-image: url("../icon/travel1_white.png");
+}
+
+a:hover .icon.travel {
+    background-image: url("../icon/travel2_white.png");
+}
+
+a .icon.tech {
+    background-image: url("../icon/tech1_white.png");
+}
+
+a:hover .icon.tech {
+    background-image: url("../icon/tech2_white.png");
+}
+
+a .icon.history {
+    background-image: url("../icon/history1_white.png");
+}
+
+a:hover .icon.history {
+    background-image: url("../icon/history2_white.png");
+}

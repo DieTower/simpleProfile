@@ -1,0 +1,87 @@
+nav {
+    position: fixed;
+    width: 50px;
+    height:100%;
+    
+    z-index:100;
+}
+
+nav .navHover {
+    width: 50%;
+    height: 100%;
+    border-left: 3px solid #10ac84;
+
+    transition-property: border-left;
+    transition-duration: 0.3s;
+
+    position: relative;
+}
+
+nav .navHover:hover {
+    border-left: 0px;
+}
+
+nav .navHover:hover .navContainer {
+    transform:translateX(0px);
+}
+
+nav .navHover .navContainer {
+    position: absolute;
+
+    background-color: #1dd1a1;
+    width: 50px;
+    height: 100%;
+
+    transform:translateX(-60px);
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navHover .navContainer ul {
+    width: 100%;
+}
+
+nav .navHover .navContainer ul li {
+    width:100%;
+    height: 50px;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navHover .navContainer ul li:not(:last-child) {
+    margin-bottom: 1px;
+}
+
+nav .navHover .navContainer ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav .navHover .navContainer ul li a {
+    width: 100%;
+    height: 100%;
+
+    color:#ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navHover .navContainer ul li a .icon {
+    width: 50%;
+    height: 50%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,55 @@
+/*==== Preferences ====*/
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*==== Useful ====*/
+.hidden {
+    visibility: hidden;
+    z-index:-1;
+}
+
+.vanish {
+    display: none;
+}
+
+/*==== Page container ====*/
+#container {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:100vh auto 60px 60px;
+}
+
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+main {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    background-color: pink;
+}
+
+main article {
+    width: 100%;
+    min-height: 400px;
+    background-color:tomato;
+    margin-bottom:2px;
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    background-color: yellowgreen;
+}
