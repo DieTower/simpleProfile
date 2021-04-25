@@ -1,0 +1,12 @@
+
+@keyframes navNeonColorKeyFrame {
+    0% { border-left-color: rgba(16, 172, 132, 1); }
+    50% { border-left-color: rgba(16, 172, 132, 0.8); }
+    100% { border-left-color: rgba(16, 172, 132, 1); }
+}
+
+.navNeonColorKey {
+    animation-name: navNeonColorKeyFrame;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
