@@ -13,6 +13,17 @@ a {
     text-decoration: none;
 }
 
+.icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tag {
+    font-family: "Pacifico", Roboto;
+    font-size:16px;
+}
+
 /*==== Useful ====*/
 .hidden {
     visibility: hidden;
@@ -23,16 +34,15 @@ a {
     display: none;
 }
 
+.bold {
+    font-weight: 600 !important;
+}
+
 /*==== Page container ====*/
 #container {
     display:grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows:100vh auto 60px 60px;
-}
-
-header {
-    grid-column: 1/4;
-    grid-row: 1/2;
 }
 
 main {
@@ -46,6 +56,10 @@ main article {
     min-height: 400px;
     background-color:tomato;
     margin-bottom:2px;
+
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 footer {

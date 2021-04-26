@@ -1,0 +1,217 @@
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    font-size:16px;
+
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+/*==== Top ====*/
+header .top {
+    grid-column: 1/6;
+    grid-row: 1/2;
+
+    background-color: red;
+}
+
+/*==== Container ====*/
+header .container {
+    grid-column: 1/5;
+    grid-row: 2/5;
+
+    cursor:default;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .containerBox {
+    display: flex;
+    flex-direction: column;
+}
+
+header .container .containerBox {
+    font-family: "Open Sans" ,"Alfa Slab One", Roboto;
+    font-weight: 400;
+}
+
+/*==== Title ====*/
+header .container .containerBox .title p {
+    font-size: 4em;
+}
+
+header .container .containerBox .title p .name {
+    font-weight: 600;
+
+    text-shadow: 2px 2px 3px #fdcb6e;
+
+    transition-property: text-shadow;
+    transition-duration: 0.3s;
+}
+
+header .container .containerBox .title p .name:hover {
+    text-shadow: 1px 1px 4px #0984e3;
+}
+
+header .container .containerBox .title p .tag {
+    font-size:0.3em;
+    margin-right:20px;
+}
+
+header .container .containerBox .title p:nth-child(2) {
+    transform:translateX(150px);
+}
+
+/*==== Sub-Title ====*/
+header .container .containerBox .subTitle {
+    margin-left: 60px;
+}
+
+header .container .containerBox .subTitle p {
+    font-weight: 600;
+    padding:0px 20px !important;
+}
+
+header .container .containerBox .subTitle p .tag {
+    font-weight: 400;
+}
+
+header .container .containerBox .subTitle p .tag:last-child {
+    transition-property: transform;
+    transition-duration: 0.3s;
+
+    display: inline-block;
+}
+
+header .container .containerBox .subTitle p small {
+    opacity: 0;
+}
+
+header .container .containerBox .subTitle p small .tag:last-child {
+    transform: translateX(-2.5px);
+
+    transition: transform 0.3s ease;
+
+    display: inline-block;
+}
+
+header .container .containerBox .subTitle p small:hover .tag:last-child {
+    transform: translateX(4px);
+}
+
+header .container .containerBox .subTitle p sub:hover + .tag:last-child {
+    transform: translateX(5px) ;
+}
+
+header .container .containerBox .subTitle p small .tag {
+    font-size: 8px;
+}
+
+header .container .containerBox .subTitle p small .emoji {
+    transform: rotate(-20deg) scale(0.5) translateY(3px) translateX(-4px);
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+
+    display: inline-block;
+}
+
+header .container .containerBox .subTitle p small:hover .emoji {
+    transform: rotate(-20deg) scale(1.3) translateY(3px) translateX(1px);
+}
+
+/*==== GitHub Button ====*/
+header .container .containerBox .buttonContainer {
+    width: 250px;
+    height: 80px;
+
+    margin-top:80px;
+    margin-left: 100px;
+}
+
+header .container .containerBox .buttonContainer a.button  {
+    position: relative;
+}
+
+header .container .containerBox .buttonContainer a.button .layer1  {
+    position: absolute;
+    background-color: #00b894;
+    border:2px solid #00b894;
+
+    z-index: 2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .containerBox .buttonContainer a.button .layer1, header .container .containerBox .buttonContainer a.button .layer2 {
+    width: 200px;
+    height: 50px;
+
+    transition-property: background-color border-color;
+    transition-duration: 0.5s;
+
+    border-radius: 7px;
+}
+
+header .container .containerBox .buttonContainer a.button:hover .layer1 {
+    background-color: #24292e;
+    border-color:#24292e;
+}
+
+header .container .containerBox .buttonContainer a.button .layer1 span  {
+    font-family: "Open Sans" , Roboto;
+    font-weight: 400;
+    color:#ffffff;
+
+    margin-right:5px;
+}
+
+header .container .containerBox .buttonContainer a.button .layer1 .icon {
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+header .container .containerBox .buttonContainer a.button:hover .layer1 .icon {
+    transform: translateX(0px);
+    animation: none;
+}
+
+header .container .containerBox .buttonContainer a.button .layer2 {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    
+    border:2px solid rgb(25, 185, 143);
+    border-bottom-right-radius: 9px;
+
+    z-index: 1;
+}
+
+header .container .containerBox .buttonContainer a.button:hover .layer2 {
+    border-color:#24292e;
+
+    top: 4px;
+    left: 4px;
+}
+
+header .container .containerBox .buttonContainer a.button:active .layer2 {
+    border-color:#24292e;
+
+    top: 0px;
+    left: 0px;
+}
+
+/*==== Social ====*/
+header .social {
+    grid-column: 5/6;
+    grid-row: 2/5;
+
+    background-color: blue;
+}

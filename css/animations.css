@@ -1,4 +1,17 @@
+/*==== Generic ====*/
+@keyframes fadeInKeyFrame {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
+.fadeIn {
+    animation-name: fadeInKeyFrame;
+    animation-duration: 0.8s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+/*==== Nav ====*/
 @keyframes navNeonColorKeyFrame {
     0% { border-left-color: rgba(16, 172, 132, 1); }
     50% { border-left-color: rgba(16, 172, 132, 0.8); }
@@ -9,4 +22,41 @@
     animation-name: navNeonColorKeyFrame;
     animation-duration: 0.8s;
     animation-iteration-count: infinite;
+}
+
+/*==== Header ====*/
+@keyframes pTagReturnKeyFrame {
+    from { transform: translateX(-245px); }
+    to { transform: translateX(0px); }
+}
+
+.pTagReturnEffect {
+    animation-name: pTagReturnKeyFrame;
+    animation-duration: 0.4s;
+}
+
+@keyframes gitHubIconKeyFrame {
+    from { transform: translateX(4px); }
+    to { transform: translateX(-2px); }
+}
+
+.gitHubIcon {
+    animation-name: gitHubIconKeyFrame;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function:ease-out;
+}
+
+@keyframes rocketEffectKeyFrame {
+    from { transform: translateX(1px); }
+    to { transform: translateX(-1px); }
+}
+
+.rocketEffect {
+    animation-name: rocketEffectKeyFrame;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function:ease-in-out;
 }

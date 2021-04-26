@@ -1,4 +1,22 @@
-a .icon.about {
+/*==== Header ====*/
+.icon.rocket {
+    width: 40px;
+    height: 40px;
+    background-image: url("../icon/rocket.png");
+    background-position: cover;
+}
+
+.icon.github {
+    width: 20px;
+    height: 20px;
+    background-image: url("../icon/github_white.png");
+    background-position: cover;
+}
+
+/*==== Nav ====*/
+.icon.about {
+    width: 50%;
+    height: 50%;
     background-image: url("../icon/person1_white.png");
 }
 
@@ -6,7 +24,9 @@ a:hover .icon.about {
     background-image: url("../icon/person2_white.png");
 }
 
-a .icon.travel {
+.icon.travel {
+    width: 50%;
+    height: 50%;
     background-image: url("../icon/travel1_white.png");
 }
 
@@ -14,7 +34,9 @@ a:hover .icon.travel {
     background-image: url("../icon/travel2_white.png");
 }
 
-a .icon.tech {
+.icon.tech {
+    width: 50%;
+    height: 50%;
     background-image: url("../icon/tech1_white.png");
 }
 
@@ -22,10 +44,13 @@ a:hover .icon.tech {
     background-image: url("../icon/tech2_white.png");
 }
 
-a .icon.history {
+.icon.history {
+    width: 50%;
+    height: 50%;
     background-image: url("../icon/history1_white.png");
 }
 
 a:hover .icon.history {
     background-image: url("../icon/history2_white.png");
 }
+

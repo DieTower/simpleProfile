@@ -76,12 +76,3 @@ nav .navHover .navContainer ul li a {
     justify-content: center;
     align-items: center;
 }
-
-nav .navHover .navContainer ul li a .icon {
-    width: 50%;
-    height: 50%;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
