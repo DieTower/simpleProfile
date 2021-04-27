@@ -7,3 +7,37 @@
 .text.back-end {
     color: #0984e3;
 }
+
+.text.facebook {
+    color:#1778F2;
+}
+
+.text.instagram {
+    color:#cd486b;
+
+    /*
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    */
+}
+
+.text.linkdin {
+    color:#2867B2;
+}
+
+/*==== Border ====*/
+
+.border.facebook {
+    border-color:#1778F2;
+}
+
+.border.instagram {
+    border-color:#cd486b;
+}
+
+.border.linkdin {
+    border-color:#2867B2;
+}

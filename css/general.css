@@ -67,3 +67,10 @@ footer {
     grid-row: 4/5;
     background-color: yellowgreen;
 }
+
+/*==== Media Query ====*/
+@media screen and (max-width: 650px) {
+    #container {
+        grid-template-rows:800px auto 60px 60px;
+    }
+}

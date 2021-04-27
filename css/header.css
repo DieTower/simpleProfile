@@ -17,6 +17,18 @@ header .top {
     background-color: red;
 }
 
+header .top .container {
+
+}
+
+header .top .container {
+    
+}
+
+header .top .container {
+    
+}
+
 /*==== Container ====*/
 header .container {
     grid-column: 1/5;
@@ -30,13 +42,11 @@ header .container {
 }
 
 header .container .containerBox {
-    display: flex;
-    flex-direction: column;
-}
-
-header .container .containerBox {
     font-family: "Open Sans" ,"Alfa Slab One", Roboto;
     font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /*==== Title ====*/
@@ -54,7 +64,7 @@ header .container .containerBox .title p .name {
 }
 
 header .container .containerBox .title p .name:hover {
-    text-shadow: 1px 1px 4px #0984e3;
+    text-shadow: 1px 1px 4px #fdcb6e;
 }
 
 header .container .containerBox .title p .tag {
@@ -73,7 +83,8 @@ header .container .containerBox .subTitle {
 
 header .container .containerBox .subTitle p {
     font-weight: 600;
-    padding:0px 20px !important;
+    font-size: 1em;
+    padding:0px 20px;
 }
 
 header .container .containerBox .subTitle p .tag {
@@ -138,7 +149,6 @@ header .container .containerBox .buttonContainer a.button  {
 }
 
 header .container .containerBox .buttonContainer a.button .layer1  {
-    position: absolute;
     background-color: #00b894;
     border:2px solid #00b894;
 
@@ -213,5 +223,240 @@ header .social {
     grid-column: 5/6;
     grid-row: 2/5;
 
-    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+
+header .social ul {
+    display: flex;
+    flex-direction: column;
+}
+
+header .social ul li {
+    width: 70px;
+    height: 70px;
+}
+
+header .social ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+header .social ul li a .button {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+    border-width:3px;
+    border-style: solid;
+    border-radius: 8px;
+
+    transition-property: transform border-radius;
+    transition-duration: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .social ul li:nth-child(1) a:hover .button {
+    transform: rotate(-10deg) translate(10px, 10px) scale(0.8);
+    border-radius: 50%;
+}
+
+header .social ul li:nth-child(2) a:hover .button {
+    transform: rotate(10deg) translate(-10px, -10px) scale(0.8);
+    border-radius: 20px;
+}
+
+header .social ul li:nth-child(3) a:hover .button {
+    transform: rotate(-10deg) translate(10px, 10px) scale(0.8);
+    border-radius: 1px;
+}
+
+header .social ul li a .button .icon {
+    font-size: 2em;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+header .social ul li:nth-child(1) a:hover .icon {
+    transform: rotate(20deg) translate(-10px, -10px) scale(2);
+}
+
+header .social ul li:nth-child(2) a:hover .icon {
+    transform: rotate(-20deg) translate(10px, 10px) scale(2);
+}
+
+header .social ul li:nth-child(3) a:hover .icon {
+    transform: rotate(20deg) translate(-10px, -10px) scale(2);
+}
+
+/*==== Media Queries(Width) ====*/
+@media screen and (max-width: 1600px) {
+    header .social {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    header .container {
+        grid-column: 1/6;
+        grid-row: 2/5;
+    }
+
+    header .container .containerBox {
+        align-items: center;
+    }
+
+    header .container .containerBox .title p {
+        margin:50px 0px;
+    }
+
+    header .container .containerBox .title p:nth-child(2) {
+        transform:translateX(80px);
+    }
+
+    header .container .containerBox .subTitle {
+        margin-left: 90px;
+    }
+
+    header .container .containerBox .subTitle .smallSmall {
+        visibility: hidden;
+    }
+
+    header .container .containerBox .buttonContainer {
+        margin-left: 0px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    header .social {
+        grid-column: 1/6;
+        grid-row: 5/6;
+
+        justify-content: center;
+    }
+
+    header .social ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header .social ul li {
+        margin-bottom: 0px;
+    }
+
+    header .social ul li:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    header {
+        grid-template-rows: 100px repeat(4, 1fr);
+    }
+
+    header .container .containerBox .title p {
+        font-size: 3em;
+    }
+
+    header .container .containerBox .title p:nth-child(2) {
+        transform:translateX(55px);
+    }
+
+    header .container .containerBox .subTitle {
+        margin-left: 20px;
+    }
+
+    header .container .containerBox .subTitle p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    header {
+        grid-template-rows: 70px repeat(4, 1fr);
+    }
+
+    header .container .containerBox {
+        align-items: flex-start;
+    }
+
+    header .container .containerBox .title p {
+        font-size: 2em;
+        margin:0px;
+        margin-bottom:10px;
+    }
+
+    header .container .containerBox .title p .tag {
+        margin-right: 10px;
+    }
+
+    header .container .containerBox .title p:nth-child(2) {
+        transform:translateX(0px);
+    }
+
+    header .container .containerBox .title p:nth-child(2) .icon.rocket {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    header .container .containerBox .subTitle {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    header .container .containerBox .subTitle p {
+        font-size: 0.6em;
+        padding:0px;
+    }
+
+    header .container .containerBox .subTitle p .tag {
+        font-size: 1em;
+    }
+
+    header .container .containerBox .buttonContainer {
+        width:auto;
+    }
+
+    .pTagReturnEffect {
+        animation: none;
+    }
+
+    .fadeIn {
+        display: none;
+    }
+
+    .smallSmall {
+        visibility: visible !important;
+        margin-top: 13px;
+        margin-left: 20px;
+        opacity: 1 !important;
+        display: inline-block;
+    }
+
+    header .container .containerBox .buttonContainer a.button .layer1, header .container .containerBox .buttonContainer a.button .layer2 {
+        width: 150px;
+        height: 40px;
+    }
+
+    header .container .containerBox .buttonContainer a.button .layer1 span {
+        font-size: 0.8em;
+    }
+
+    header .container .containerBox .buttonContainer a.button .layer1 .icon {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/*==== Media Queries(Height) ====*/
+@media screen and (max-height: 850px) {
+    header {
+        min-height: 850px;
+    }
 }
