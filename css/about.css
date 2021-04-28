@@ -12,6 +12,59 @@ article#about .container {
     grid-template-rows: repeat(4,1fr) !important;
 }
 
+/*==== Images ====*/
+article#about .container .airplaneContainer {
+    grid-column: 3/6;
+    grid-row: 1/4;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+article#about .container .airplaneContainer .airplane {
+    width: 1100px;
+    height: 515px;
+
+    /* margin-left:50px; */
+    transform: translateX(50px);
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+
+    z-index: -1;
+
+    background-image: url("../img/airplane.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+}
+
+article#about .container .citazenKaneContainer {
+    grid-column: 2/4;
+    grid-row: 1/4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article#about .container .citazenKaneContainer .citazenKane {
+    width: 650px;
+    height: 350px;
+
+    /* margin-top:100px; */
+    transform: translateY(60px);
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+
+    background-image: url("../img/citazen_kane2.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+}
+
 /*==== Text ====*/
 article#about .container .containerText {
     background-color:transparent;
@@ -138,9 +191,10 @@ article#about .container .containerImage .photoContainer .photoBackground {
     width: 350px;
     height: 350px;
 
+    opacity: 0.6;
+
     z-index: 1;
 }
-
 
 /*==== Localization ====*/
 article#about .container .containerLocalization {
@@ -250,6 +304,35 @@ article#about .container .containerLocalization .backgroundContainer .localizati
 }
 
 /*==== Media Queries ====*/
+@media screen and (max-width: 2130px) {
+    article#about .container .citazenKaneContainer .citazenKane {
+        transform: translateY(80px);
+    }
+}
+
+@media screen and (max-width: 1590px) {
+    article#about .container .citazenKaneContainer .citazenKane {
+        background-image: url("../img/citazen_kane1.png");
+        
+        width: 350px;
+        height: 350px;
+
+        transform: translateY(120px);
+    }
+
+    article#about .container .airplaneContainer .airplane {
+        width: 900px;
+        height: 420px;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    article#about .container .citazenKaneContainer .citazenKane {
+        transform: translateY(150px);
+    }
+}
+
 @media screen and (max-width: 1080px) {
     article#about {
         height:800px;
@@ -261,6 +344,14 @@ article#about .container .containerLocalization .backgroundContainer .localizati
     }
 
     article#about .container .containerImage {
+        display: none;
+    }
+
+    article#about .container .citazenKaneContainer .citazenKane {
+        display: none;
+    }
+
+    article#about .container .airplaneContainer .airplane {
         display: none;
     }
 

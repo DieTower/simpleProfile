@@ -1,6 +1,7 @@
 /*==== Preferences ====*/
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ul {
