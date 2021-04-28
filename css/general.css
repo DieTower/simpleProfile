@@ -48,14 +48,22 @@ a {
 main {
     grid-column: 1/4;
     grid-row: 2/4;
-    background-color: pink;
 }
 
 main article {
     width: 100%;
     min-height: 400px;
-    background-color:tomato;
+
     margin-bottom:2px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main article .container {
+    
+    margin:0px 10px;
 
     display:grid;
     grid-template-columns: repeat(5, 1fr);

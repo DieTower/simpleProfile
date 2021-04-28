@@ -1,0 +1,248 @@
+article#about {
+    height:1000px;
+}
+
+article#about .container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+
+    background-color:transparent;
+}
+
+/*==== Text ====*/
+article#about .container .containerText {
+    background-color:transparent;
+    grid-column: 1/4;
+    grid-row: 1/4;
+
+    font-size:16px;
+    font-family: "Roboto", sans-serif;
+
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article#about .container .text {
+    width: 80%;
+    height: 80%;
+
+    font-family: "Open Sans";
+
+    cursor:default;
+}
+
+article#about .container .text p.h2 {
+    font-size: 2.2em;
+}
+
+article#about .container .text p.h3 {
+    font-size: 2em;
+}
+
+article#about .container .text p.h4 {
+    font-size: 1.8em;
+}
+
+article#about .container .text p.textarea {
+    font-size: 1.2em;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+
+    cursor:auto;
+}
+
+article#about .container .text p.textarea span.tag {
+    cursor:default;
+}
+
+article#about .container .text p:last-child {
+    width: 80%;
+}
+
+/*==== Image ====*/
+article#about .container .containerImage {
+    grid-column: 4/6;
+    grid-row: 1/4;
+
+    z-index: 1;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article#about .container .containerImage .photoContainer {
+    display:grid;
+    grid-template-columns: 10px 1fr;
+    grid-template-rows: 15px 1fr;
+}
+
+article#about .container .containerImage .photoContainer .photo, article#about .container .containerImage .photoContainer .photoBackground {
+    border-radius: 5px;
+}
+
+article#about .container .containerImage .photoContainer .photo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    background-image: url("../img/me.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 350px;
+    height: 350px;
+
+    font-size:16px;
+
+    z-index: 2;
+
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+article#about .container .containerImage .photoContainer .photo p {
+    margin:5px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+
+    cursor:default;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article#about .container .containerImage .photoContainer .photo p .emoji {
+    font-size: 1em;
+    margin-left: 2px;
+}
+
+article#about .container .containerImage .photoContainer .photoBackground {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    /* background-color: #FFC502; */
+    background-color: #FFC502;
+    border:2px solid #FFC502;
+    width: 350px;
+    height: 350px;
+
+    z-index: 1;
+}
+
+
+/*==== Localization ====*/
+article#about .container .containerLocalization {
+    grid-column: 2/5;
+    grid-row: 3/5;
+
+    z-index: 2;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article#about .container .containerLocalization .background {
+    background-image: url('../img/lisboa3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    width: 95%;
+    height: 90%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+article#about .container .containerLocalization .backgroundContainer {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    font-family: "Roboto", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article#about .container .containerLocalization .backgroundFooter {
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+article#about .container .containerLocalization .backgroundFooter p {
+    margin:5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    color:#ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article#about .container .containerLocalization .backgroundFooter p .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+article#about .container .containerLocalization .background, article#about .container .containerLocalization .backgroundContainer {
+    border-radius: 5px;
+}
+
+article#about .container .containerLocalization .backgroundContainer p {
+    font-size: 0.9em;
+    font-weight: 900;
+    color:#ffffff;
+    text-shadow: 0px 0px 1px #000000;
+
+    cursor:default;
+}
+
+article#about .container .containerLocalization .backgroundContainer .localization {
+    background-color: rgba(255, 255, 255, 1);
+    padding:6px 8px;
+    border-radius: 4px;
+}
+
+article#about .container .containerLocalization .backgroundContainer .localization .city {
+   font-family: "Compass";
+   font-size: 0.8em;
+   letter-spacing: 2px;
+   color:#FFC502;
+   /* text-shadow:0px 0px 3px #000000; */
+   text-shadow:0px 0px 1px #FFC502;
+}
+
+article#about .container .containerLocalization .backgroundContainer .localization .country {
+    font-family: "Aptifer Slab";
+    font-weight: 900;
+    font-size: 0.9em;
+    color:#000000;
+
+    text-shadow:1px 1px 1px #ffffff;
+ }

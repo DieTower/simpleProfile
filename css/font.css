@@ -9,3 +9,15 @@
 
 /*==== Pacifico ====*/
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*==== Compass(Lisboa) ====*/
+@font-face {
+    font-family: 'Compass';
+    src: url('../font/lisboa/CompassBold.ttf');
+}
+
+/*==== Aptifer Slab(Portugal) ====*/
+@font-face {
+    font-family: 'Aptifer Slab';
+    src: url('../font/Portugal/Aptifer\ Slab\ LT\ W01\ Medium.ttf');
+}
