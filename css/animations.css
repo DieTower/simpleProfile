@@ -60,3 +60,17 @@
     animation-direction: alternate-reverse;
     animation-timing-function:ease-in-out;
 }
+
+/*==== About ====*/
+@keyframes mapPointerEffectKeyFrame {
+    from { transform: translateY(2px); }
+    to { transform: translateY(-2px); }
+}
+
+.mapPointerEffect {
+    animation-name: mapPointerEffectKeyFrame;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function:ease-in-out;
+}
