@@ -41,3 +41,138 @@
 .border.linkdin {
     border-color:#2867B2;
 }
+
+/* Skills */
+.javascriptColor {
+    background-color:#f3db53 !important;
+}
+
+.cssColor {
+    background-color:#047bc3 !important;
+}
+
+.htmlColor {
+    background-color:#ec642b !important;
+}
+
+.NETColor {
+    background-color:#686de0 !important;
+}
+
+.scssColor {
+    background-color:#cc649c !important;
+}
+
+.gitColor {
+    background-color:#f45334 !important;
+}
+
+.cssAnimationColor {
+    background-color:#24bc9c !important;
+}
+
+.sqlColor {
+    /* background-color:#ae363a !important; */
+    /* background-color:#8a8a8b !important; */
+    /* background-color:#0b0b0b !important; */
+    background-color:#747d8c !important;
+}
+
+.angularColor {
+    background-color:#e74c3c !important;
+}
+
+.cSharpColor {
+    background-color:#9b59b6 !important;
+}
+
+.reactColor {
+    background-color:#68dcfc !important;
+}
+
+.reactJSColor {
+    background-color:#61dafb !important;
+}
+
+.restColor {
+    background-color:#63cba3 !important;
+}
+
+.phpColor {
+    background-color:#8b94c4 !important;
+}
+
+.responsiveDesignColor {
+    background-color:#2484db !important;
+}
+
+.emca6Color {
+    background-color:#fbe404 !important;
+}
+
+.gridLayoutColor {
+    background-color:#ec6c64 !important;
+}
+
+.typeScriptColor {
+    background-color:#2c7cc4 !important;
+}
+
+.flexLayoutColor {
+    background-color:#fba344 !important;
+}
+
+
+
+.AgileColor {
+    background-color:#1eb9b4 !important;
+}
+
+.SCRUMColor {
+    background-color:#db918b !important;
+}
+
+.MarkdownColor {
+    background-color:#bdc3c7 !important;
+}
+
+.VisualStudioColor {
+    background-color:#c196ef !important;
+}
+
+.VSCode {
+    background-color:#047ccc !important;
+}
+
+.MySQLColor {
+    background-color:#e4742a !important;
+}
+
+.AdobeXDColor {
+    /* background-color:#9c1474 !important; */
+    background-color:#f825ba !important;
+}
+
+.PostmanColor {
+    background-color:#fb6c34 !important;
+}
+
+.CMDColor {
+    background-color:#44c040 !important;
+}
+
+.OOPColor {
+    background-color:#1e3799 !important;
+}
+
+.SQLServerColor {
+    background-color:#d3343f !important;
+}
+
+.NPMColor {
+    background-color:#cc3434 !important;
+}
+
+.BitbucketColor {
+    background-color:#2384fc !important;
+}

@@ -1,4 +1,14 @@
 /*==== Nav ====*/
+.icon.home {
+    width: 50%;
+    height: 50%;
+    background-image: url("../icon/home1_white.png");
+}
+
+a:hover .icon.home {
+    background-image: url("../icon/home2_white.png");
+}
+
 .icon.about {
     width: 50%;
     height: 50%;
@@ -9,24 +19,14 @@ a:hover .icon.about {
     background-image: url("../icon/person2_white.png");
 }
 
-.icon.travel {
+.icon.skills {
     width: 50%;
     height: 50%;
-    background-image: url("../icon/travel1_white.png");
+    background-image: url("../icon/skills1_white.png");
 }
 
-a:hover .icon.travel {
-    background-image: url("../icon/travel2_white.png");
-}
-
-.icon.tech {
-    width: 50%;
-    height: 50%;
-    background-image: url("../icon/tech1_white.png");
-}
-
-a:hover .icon.tech {
-    background-image: url("../icon/tech2_white.png");
+a:hover .icon.skills {
+    background-image: url("../icon/skills2_white.png");
 }
 
 .icon.history {

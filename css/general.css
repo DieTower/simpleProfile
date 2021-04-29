@@ -20,6 +20,14 @@ a {
     background-position: center;
 }
 
+.bold {
+    font-weight: 600 !important;
+}
+
+.small {
+    font-size: 8px !important;
+}
+
 .tag {
     font-family: "Pacifico", Roboto;
     font-size:16px;
@@ -37,6 +45,10 @@ a {
 
 .bold {
     font-weight: 600 !important;
+}
+
+p.h2 {
+    font-size: 36.5px;
 }
 
 /*==== Page container ====*/

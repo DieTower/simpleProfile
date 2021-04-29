@@ -1,0 +1,193 @@
+article#skills {
+    height:1000px;
+}
+
+article#skills .container {
+    width: 100%;
+    height: 100%;
+}
+
+/*==== Background Images ====*/
+article#skills .container .computerContainer {
+    grid-column: 1/3;
+    grid-row: 1/5;
+
+    display: none;
+}
+
+article#skills .container .computerContainer .computer {
+    width: 800px;
+    height: 800px;
+
+    transform: translateX(-250px) translateY(100px) rotate(-5deg);
+
+    background-image: url("../img/webDev.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    z-index: -1;
+}
+
+article#skills .container .programmingContainer {
+    grid-column: 4/6;
+    grid-row: 2/5;
+
+    margin-left:50px;
+}
+
+article#skills .container .programmingContainer .programming {
+    width: 580px;
+    height: 600px;
+
+    background-image: url("../img/programing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*==== Container ====*/
+article#skills .container .skillsContainer {
+    grid-column: 2/5;
+    grid-row: 3/6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article#skills .container .skillsContainer .skills {
+    width: 100%;
+    height: 100%;
+
+    transform: translateX(-100px) translateY(-100px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+article#skills .container .skillsContainer .skills p.h2 {
+    font-family: "Opens Sans", sans-serif;
+}
+
+article#skills .container .skillsContainer .skills ul {
+    min-width: 500px;
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article#skills .container .skillsContainer .skills ul li {
+    width: auto;
+    height: 50px;
+
+    margin:5px 0px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+article#skills .container .skillsContainer .skills ul li a {
+    width: auto;
+    height: 100%;
+
+    margin:0px 5px;
+
+    background-color: tomato;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    color:#ffffff;
+    letter-spacing: 1.5px;
+
+    transition-property: transform, box-shadow;
+    transition-duration: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article#skills .container .skillsContainer .skills ul li a:hover {
+    box-shadow:0px 0px 3px #000000;
+    /* transform:scale(0.9) rotateY(180deg); */
+    transform:scale(0.9);
+}
+
+article#skills .container .skillsContainer .skills ul li a .background {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    padding:0px 28px;
+
+    background-color: rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article#skills .container .skillsContainer .skills ul li a .background span {
+    text-shadow: 0px 0px 1px #ffffff;
+    display: inline-block;
+}
+
+article#skills .container .skillsContainer .skills ul li a span:last-child {
+    position: absolute;
+    /* transform:rotateY(180deg); */
+    display:none;
+}
+
+article#skills .container .skillsContainer .skills ul li a:hover span:first-child {
+    visibility: hidden;
+}
+
+article#skills .container .skillsContainer .skills ul li a:hover span:last-child {
+    display: inline-block;
+}
+
+article#skills .container .skillsContainer .skills ul li, article#skills .container .skillsContainer .skills ul li a, article#skills .container .skillsContainer .skills ul li a .background {
+    border-radius: 10px;
+}
+
+
+/*==== Media Queries ====*/
+@media screen and (max-width: 1080px) {
+    article#skills {
+        height:800px;
+    }
+
+    article#skills .container .programmingContainer {
+        grid-column: 3/6;
+        transform: translateY(-150px);
+    }
+
+    article#skills .container .skillsContainer {
+        grid-column: 1/5;
+        grid-row: 2/6;
+    }
+
+    article#skills .container .skillsContainer .skills {
+        margin-left: 50px;
+        transform: translateX(0px) translateY(0px);
+        align-items: flex-start;
+    }
+
+    article#skills .container .skillsContainer .skills ul {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    article#skills .container .programmingContainer {
+        display: none;
+    }
+}
