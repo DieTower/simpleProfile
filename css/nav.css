@@ -28,7 +28,7 @@ nav .navHover:hover .navContainer {
 nav .navHover .navContainer {
     position: absolute;
 
-    background-color: #fdcb6e;
+    background-color: rgb(25, 185, 143);
     width: 50px;
     height: 100%;
 

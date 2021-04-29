@@ -192,10 +192,6 @@ article#history .container {
 }
 
 @media screen and (max-width: 1500px) {
-    .textContainer .text .area p.textarea {
-        max-width: 450px;
-    }
-
     .sitesContainer ul li:first-child a .background p:first-child {
         font-size: 2em;
     }
@@ -207,6 +203,10 @@ article#history .container {
 
 @media screen and (max-width: 1200px) {
 
+    .textContainer .text .area p.textarea {
+        max-width: 450px;
+    }
+    
     article#history {
         height:800px;
     }
