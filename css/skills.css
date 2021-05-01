@@ -195,19 +195,29 @@ article#skills .container .skillsContainer .skills ul li, article#skills .contai
 }
 
 @media screen and (max-width: 680px) {
+    article#skills {
+        height:700px;
+    }
 
     article#skills .container {
-        grid-template-rows:10px repeat(4,1fr) !important;
+        grid-template-rows:60px repeat(4,1fr) 60px !important;
     }
 
     article#skills .container .skillsContainer {
         grid-column: 1/6;
+
+        align-items: flex-start;
+    }
+
+    article#skills .container .skillsContainer .skills {
+        width: 90%;
+        margin-left: 5%;
+        overflow-x: auto;
     }
 
     article#skills .container .skillsContainer .skills ul {
         width: 100%;
         min-width: none;
-        overflow-x: auto;
     }
 
     article#skills .container .skillsContainer .skills ul::-webkit-scrollbar {
