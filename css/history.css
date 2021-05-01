@@ -193,6 +193,7 @@ article#history .container {
 
     text-align: justify;
     text-justify: inter-word;
+    line-height: 1.5;
 }
 
 .textContainer .text .area p.textarea .icon {
@@ -314,11 +315,12 @@ article#history .container {
     }
 
     .textContainer .text .title p.h2 {
-        margin-bottom:20px;
+        margin-bottom:30px;
     }
 
     .textContainer .text .area p.textarea {
         margin:5px;
+        margin-bottom: 20px;
     }
 
     .imageContainer .image {
