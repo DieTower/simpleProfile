@@ -193,3 +193,32 @@ article#skills .container .skillsContainer .skills ul li, article#skills .contai
         display: none;
     }
 }
+
+@media screen and (max-width: 680px) {
+
+    article#skills .container {
+        grid-template-rows:10px repeat(4,1fr) !important;
+    }
+
+    article#skills .container .skillsContainer {
+        grid-column: 1/6;
+    }
+
+    article#skills .container .skillsContainer .skills ul {
+        width: 100%;
+        min-width: none;
+        overflow-x: auto;
+    }
+
+    article#skills .container .skillsContainer .skills ul::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    article#skills .container .skillsContainer .skills ul li {
+        height: 40px;
+    }
+    
+    article#skills .container .skillsContainer .skills ul li a {
+        font-size: 0.8em;
+    }
+}

@@ -365,7 +365,7 @@ header .social ul li:nth-child(3) a:hover .icon {
     transform: rotate(20deg) translate(-10px, -10px) scale(2);
 }
 
-/*==== Media Queries(Width) ====*/
+/*==== Media Queries(width) ====*/
 @media screen and (max-width: 1600px) {
     header .social {
         justify-content: center;
@@ -423,6 +423,17 @@ header .social ul li:nth-child(3) a:hover .icon {
 
     header .social ul li:not(:last-child) {
         margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    header .top .container .messageContainer .message {
+        margin:10px;
+        padding: 3px 5px;
+    }
+
+    header .top .container .messageContainer .message p {
+        font-size:0.7em;
     }
 }
 
@@ -527,7 +538,7 @@ header .social ul li:nth-child(3) a:hover .icon {
     }
 }
 
-/*==== Media Queries(Height) ====*/
+/*==== Media Queries(height) ====*/
 @media screen and (max-height: 850px) {
     header {
         min-height: 850px;

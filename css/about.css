@@ -366,12 +366,18 @@ article#about .container .containerLocalization .backgroundContainer .localizati
     }
 
     article#about {
-        height:600px;
+        height:700px;
     }
 
     article#about .container .text p:last-child {
         width: 100%;
         height: 196px;
         overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    article#about .container .text p.textarea {
+        font-size: 1em;
     }
 }
