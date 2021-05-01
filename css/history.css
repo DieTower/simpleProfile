@@ -6,6 +6,8 @@ article#history .container {
     width: 100%;
     height: 100%;
 
+    margin-bottom: 10px;
+
     grid-template-columns:repeat(3,1fr) !important;
     grid-template-rows:repeat(3,1fr) !important;
 }
@@ -69,7 +71,7 @@ article#history .container {
 }
 
 .sitesContainer ul li:last-child {
-    border-top-right-radius: 10px;
+    border-top-right-radius: 7px;
 }
 
 .sitesContainer ul li:first-child a {
@@ -123,23 +125,29 @@ article#history .container {
 }
 
 .sitesContainer ul li a .background p:last-child {
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
-.sitesContainer ul li:first-child:hover a .background p {
-    transform: scale(2.8) rotate(3deg);
-}
-
-.sitesContainer ul li:last-child:hover a .background p {
-    transform: scale(4.8) rotate(-2deg);
-}
-
+/* -> lisbonGuy */
 .sitesContainer ul li:first-child:hover a .background p:first-child {
-    transform: scale(2.1) rotate(-10deg);
+    /* transform: scale(2.1) rotate(-10deg); */
+    transform: scale(1.1);
 }
 
+.sitesContainer ul li:first-child:hover a .background p:last-child {
+    /* transform: scale(2.8) rotate(3deg); */
+    transform: scale(2);
+}
+
+/* -> portugueseProfile */
 .sitesContainer ul li:last-child:hover a .background p:first-child {
-    transform: scale(1.5) rotate(5deg);
+    /* transform: scale(1.5) rotate(5deg); */
+    transform: scale(1.1);
+}
+
+.sitesContainer ul li:last-child:hover a .background p:last-child {
+    /* transform: scale(1.5) rotate(5deg); */
+    transform: scale(2);
 }
 
 /*==== Text ====*/
@@ -188,6 +196,26 @@ article#history .container {
 }
 
 /*==== Media Queries ====*/
+@media screen and (max-width: 1900px) {
+    /* -> lisbonGuy */
+    .sitesContainer ul li:first-child:hover a .background p:first-child {
+        transform: scale(1);
+    }
+
+    .sitesContainer ul li:first-child:hover a .background p:last-child {
+        transform: scale(2);
+    }
+
+    /* -> portugueseProfile */
+    .sitesContainer ul li:last-child:hover a .background p:first-child {
+        transform: scale(1);
+    }
+
+    .sitesContainer ul li:last-child:hover a .background p:last-child {
+        transform: scale(2);
+    }
+}
+
 @media screen and (max-width: 1600px) {
     .textContainer .text .area p.textarea {
         max-width: 350px;
@@ -239,20 +267,22 @@ article#history .container {
         border-top-right-radius: 0px;
     }
 
-    .sitesContainer ul li:first-child:hover a .background p {
-        transform: scale(4.8) rotate(0deg);
-    }
-    
-    .sitesContainer ul li:last-child:hover a .background p {
-        transform: scale(4.8) rotate(0deg);
-    }
-    
+    /* -> lisbonGuy */
     .sitesContainer ul li:first-child:hover a .background p:first-child {
-        transform: scale(2) rotate(0deg);
+        transform: scale(0.8);
     }
-    
+
+    .sitesContainer ul li:first-child:hover a .background p:last-child {
+        transform: scale(2);
+    }
+
+    /* -> portugueseProfile */
     .sitesContainer ul li:last-child:hover a .background p:first-child {
-        transform: scale(2) rotate(0deg);
+        transform: scale(0.8);
+    }
+
+    .sitesContainer ul li:last-child:hover a .background p:last-child {
+        transform: scale(2);
     }
 
     .textContainer {

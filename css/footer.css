@@ -2,7 +2,8 @@ footer {
     grid-column: 1/4;
     grid-row: 4/5;
 
-    background-color:#10ac84;
+    /* background-color:#10ac84; */
+    background-color: rgb(25, 185, 143);
 
     display: flex;
     flex-direction: column;
@@ -14,17 +15,19 @@ footer {
 footer p {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-    font-size: 14px;
     color:#ffffff;
 
     margin:0px;
 }
 
 footer p span {
-    font-size: 14px;
     margin-right:4px;
     cursor:default;
     display: inline-block;
+}
+
+footer p, footer p span {
+    font-size: 13px;
 }
 
 footer p span:last-child {
@@ -43,9 +46,9 @@ footer p:hover span:last-child {
 footer a {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 8px;
 
-    margin-top:8px;
+    margin-top:5px;
 
     cursor:default;
 }
