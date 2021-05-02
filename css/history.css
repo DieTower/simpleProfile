@@ -17,11 +17,13 @@ article#history .container {
     grid-column: 1/2;
     grid-row: 1/2;
 
+    position:relative;
+
     margin-left: 20px;
 
     display:flex;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .imageContainer .image {
@@ -34,6 +36,25 @@ article#history .container {
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: cover;
+}
+
+.imageContainer .darwin {
+    position:absolute;
+    width:1200px;
+    height: 1516px;
+
+    /* transform: translate(-100px, -800px) scale(0.5); */
+    transform: translate(-320px, -800px) rotate(-0deg) scale(0.6);
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+
+    background-image: url("../img/darwin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+
+    z-index: -1;
 }
 
 /*==== Sites ====*/
@@ -201,7 +222,23 @@ article#history .container {
 }
 
 /*==== Media Queries ====*/
+@media screen and (max-width: 2200px) {
+    .imageContainer .darwin {
+        transform: translate(-320px, -800px) rotate(-0deg) scale(0.5);
+    }
+}
+
+@media screen and (max-width: 2100px) {
+    .imageContainer .darwin {
+        transform: translate(-350px, -800px) rotate(-0deg) scale(0.5);
+    }
+}
+
 @media screen and (max-width: 1900px) {
+    .imageContainer .darwin {
+        transform: translate(-370px, -850px) rotate(-0deg) scale(0.6);
+    }
+
     /* -> lisbonGuy */
     .sitesContainer ul li:first-child:hover a .background p:first-child {
         transform: scale(1);
@@ -221,13 +258,27 @@ article#history .container {
     }
 }
 
+@media screen and (max-width: 1800px) {
+    .imageContainer .darwin {
+        transform: translate(-480px, -850px) rotate(-0deg) scale(0.6);
+    }
+}
+
 @media screen and (max-width: 1600px) {
+    .imageContainer .darwin {
+        transform: translate(-520px, -850px) rotate(-0deg) scale(0.6);
+    }
+
     .textContainer .text .area p.textarea {
         max-width: 350px;
     }
 }
 
 @media screen and (max-width: 1500px) {
+    .imageContainer .darwin {
+        transform: translate(-550px, -850px) rotate(-0deg) scale(0.6);
+    }
+
     .sitesContainer ul li:first-child a .background p:first-child {
         font-size: 2em;
     }
@@ -238,6 +289,9 @@ article#history .container {
 }
 
 @media screen and (max-width: 1200px) {
+    .imageContainer .darwin {
+        display: none;
+    }
 
     .textContainer .text .area p.textarea {
         max-width: 450px;
